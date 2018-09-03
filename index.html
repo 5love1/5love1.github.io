@@ -25,10 +25,13 @@ function TimeToNow() {
     var seconds = Math.round(leave3 / 1000)
     return "" + days + " 天 " + hours + " 小时 " + minutes + " 分钟" + seconds + " 秒"
 }
+
+document.getElementById("target").innerHTML = TimeToNow();
+
 </script>
 
 </head> 
 <body>
-<div style="font-weight: bold; font-size: 80px;">Now - The Time We Fall In Love = TimeToNow()</div>
+<div id="target" style="font-weight: bold; font-size: 80px;">Now - The Time We Fall In Love = TimeToNow()</div>
 </body>
 </html>
