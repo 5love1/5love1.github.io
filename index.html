@@ -24,7 +24,7 @@ function TimeToNow() {
     var leave3 = leave2 % (60 * 1000)      //计算分钟数后剩余的毫秒数
     var seconds = Math.round(leave3 / 1000)
     var time_str = "" + days + " 天 " + hours + " 小时 " + minutes + " 分钟 " + seconds + " 秒"
-    document.getElementById("target").innerHTML = "Now - The Time We Fall In Love = " + time_str;
+    document.getElementById("target").innerHTML = "The Time We Fall In Love = " + time_str;
 }
 
 setInterval('TimeToNow()',1000);
